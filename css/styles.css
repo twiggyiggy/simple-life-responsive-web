@@ -1,0 +1,148 @@
+/* Fonts
+font-family: 'Lora', serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+
+
+body {
+  --navigation-text: #717171;
+  --main-text: #707070;
+  --header-bg: #F8F8F8;
+  --main-heading-text: #143774;
+  --secondary-heading-text: #1792D2;
+  --sidebar-bg: #EBEBEB; 
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+/******
+  TYPOGRAPHY  
+*******/
+
+h1,
+h2,
+h3 {
+  color: var(--main-heading-text);
+  font-family: 'Lora', serif;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.subheading {
+  font-size: .75rem;
+  font-weight: 700;
+  color: var(--secondary-heading-text);
+  margin: 0;
+  letter-spacing: .2rem;
+}
+/******
+   LAYOUT 
+*******/
+
+.wrapper {
+  margin: 0;
+}
+
+
+header {
+  background-color: var(--header-bg);
+  padding: 2em 0;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 765px) {
+  .container-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.titles {
+  margin-bottom: 1em;
+}
+
+@media (min-width: 765px) {
+  .titles {
+    margin-bottom: 0em;
+  }
+}
+
+/* Navigation */
+
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+nav li {
+  margin: 0.4em 0;
+}
+
+@media (min-width: 765px) {
+  nav ul {
+    flex-direction: row;
+  }
+  nav li {
+    margin-left: 2em;
+  }
+}
+
+li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--navigation-text);
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--secondary-heading-text);
+}
+/* Footer */ 
+
+footer {
+  background-color: var(--main-heading-text);
+}
+
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: .5;
+  padding: 3em 0;
+}
+
+.container-footer p {
+  color: #fff;
+  margin: .5em;
+}
+
