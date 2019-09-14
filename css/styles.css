@@ -153,7 +153,7 @@ p {
 .article-featured {
   display: flex;
   flex-direction: column;
-  padding: 2em 0;
+  padding-bottom: 2em;
   margin-bottom: 2em;
   border-bottom: 1px solid var(--main-text);
 }
@@ -203,14 +203,10 @@ p {
 
 /* Widgets */
 
-.sidebar {
-  margin-bottom: 2em;
-}
-
 .sidebar-widget {
   border: 1em solid var(--sidebar-bg);
   padding: 1em;
-  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .widget-image {
@@ -240,8 +236,9 @@ p {
 
 header {
   background-color: var(--header-bg);
-  padding: 2em 0;
   text-align: center;
+  padding: 2em 0;
+  margin-bottom: 2em;
 }
 
 
@@ -288,6 +285,11 @@ li a {
 nav a:hover,
 nav a:focus {
   color: var(--light-blue);
+}
+
+.current-page {
+  border-bottom: 1px solid var(--main-text);
+  padding-bottom: 0.5em;
 }
 
 /* Footer */ 
